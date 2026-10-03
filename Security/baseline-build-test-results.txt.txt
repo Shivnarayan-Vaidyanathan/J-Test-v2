@@ -1,0 +1,87 @@
+Frontend Baseline Test
+======================
+
+Command:
+npm test -- --watchAll=false
+
+Location:
+J-Test\j-test-ui
+
+Result:
+FAILED
+
+Primary Error:
+Cannot find module 'react-router-dom' from 'src/App.js'
+
+Test Suites:
+1 failed, 1 total
+
+Tests:
+0 total
+
+Additional Warning:
+babel-preset-react-app imports
+@babel/plugin-proposal-private-property-in-object
+without declaring it as a dependency.
+
+Conclusion:
+Frontend test suite was already failing before security remediation.
+
+----------------------------------------------------------------------
+
+Frontend Baseline Build
+=======================
+
+Command:
+npm run build
+
+Location:
+J-Test\j-test-ui
+
+Result:
+FAILED
+
+Primary Error:
+Module not found: Error: Can't resolve 'marked'
+in src\Components
+
+Additional Warnings:
+- fs.F_OK is deprecated
+- caniuse-lite browser data is outdated
+
+Conclusion:
+Frontend production build was already failing before security remediation.
+
+---------------------------------------------------------------------------
+
+Backend Baseline Build
+======================
+
+Command:
+dotnet build
+
+Location:
+J-Test\J-Test
+
+Result:
+PASSED
+
+Target Framework:
+net8.0
+
+Build Warnings:
+43
+
+Important Dependency Compatibility Warnings:
+- Jira.SDK 1.2.25 restored against .NET Framework targets rather than net8.0.
+- RestSharp 105.2.3 restored against .NET Framework targets rather than net8.0.
+- These packages may not be fully compatible with the project.
+
+Additional Quality Warnings:
+Multiple CS8618 nullable-reference warnings exist in models including:
+- Credential.cs
+- UserStoryRequest.cs
+- GeneratedTestCase.cs
+
+Baseline Conclusion:
+Backend successfully compiled before security remediation, with 43 warnings.

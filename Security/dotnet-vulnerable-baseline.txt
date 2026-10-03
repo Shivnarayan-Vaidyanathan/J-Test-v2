@@ -1,0 +1,14 @@
+  Determining projects to restore...
+D:\Shivnarayan Vaidyanathan\Company\Sonata Software\PoCs\J-Test\J-Test\J-Test.csproj : warning NU1701: Package 'Jira.SDK 1.2.25' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.
+D:\Shivnarayan Vaidyanathan\Company\Sonata Software\PoCs\J-Test\J-Test\J-Test.csproj : warning NU1701: Package 'RestSharp 105.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.
+  All projects are up-to-date for restore.
+
+The following sources were used:
+   https://api.nuget.org/v3/index.json
+   C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+
+Project `J-Test` has the following vulnerable packages
+   [net8.0]: 
+   Transitive Package      Resolved   Severity   Advisory URL                                     
+   > RestSharp             105.2.3    High       https://github.com/advisories/GHSA-9pq7-rcxv-47vq
+
